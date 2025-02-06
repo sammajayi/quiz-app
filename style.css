@@ -179,6 +179,15 @@ transition: all 0.3s ease;
   user-select: none;
 }
 
+.quiz_box header .time_line{
+    position:absolute;
+    bottom: 0px;
+    left:0px;
+    height: 3px;
+    width:50%;
+    background: #007bff;
+}
+
 .quiz_box section {
   padding: 25px 30px 20px 30px;
   background: #fff;
@@ -242,7 +251,7 @@ section .option_list .option:hover {
 }
 
 .option_list .option.correct{
-  color: #23903c;
+  color: #155724;
   border-color: #23903c;
   background: #d4edda;
 }
@@ -251,6 +260,10 @@ section .option_list .option:hover {
   color: #a42834;
   background: #f8d7da;
   border-color: #a42834;
+}
+
+.option_list .option.disabled{
+  pointer-events: none;
 }
 
 .quiz_box footer {
